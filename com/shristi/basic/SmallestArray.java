@@ -1,7 +1,8 @@
 package com.shristi.basic;
+
 import java.util.Scanner;
 
-public class GreatestArray {
+public class SmallestArray {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -11,13 +12,13 @@ public class GreatestArray {
 		for(int i=0;i<arr.length;i++) {
 			arr[i]=s.nextInt();
 		}
-		int greaterValue=arr[0];
+		int smallestValue=arr[0];
 		for(int i=0;i<arr.length;i++) {
-			if(greaterValue<arr[i]) {
-				greaterValue=arr[i];
+			if(smallestValue>arr[i]) {
+				smallestValue=arr[i];
 			}
 		}
-		System.out.println("GreaterValue:"+greaterValue);
+		System.out.println("SmallestValue:"+smallestValue);
 		s.close();
 		
 		
@@ -25,3 +26,4 @@ public class GreatestArray {
 	}
 
 }
+
